@@ -15,7 +15,6 @@ void main() async {
   Bloc.observer = MyBlocObserver();
   await DioHelper.init();
   await CacheHelper.init();
-
   bool? onBoarding = CacheHelper.getData(key: 'OnBoarding');
   token = CacheHelper.getData(key: 'token') ?? null;
   print(token);
